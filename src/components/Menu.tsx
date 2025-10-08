@@ -93,17 +93,26 @@ export default function Menu() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a 
-            href="https://www.lomathai.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            <Button variant="outline" size="lg">
-              View Full Menu
+        <div className="text-center mt-12 space-y-4">
+          <p className="text-muted-foreground">
+            Explore our complete menu featuring curries, noodles, stir-fries, soups, and more
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => window.open('https://deliveroo.co.uk/menu/london/shepherds-bush/loma-thai', '_blank')}
+            >
+              Order Full Menu
             </Button>
-          </a>
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.location.href = 'tel:07344104456'}
+            >
+              Call to Order
+            </Button>
+          </div>
         </div>
       </div>
     </section>

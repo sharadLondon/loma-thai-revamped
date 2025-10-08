@@ -5,8 +5,8 @@ import restaurantInterior from "@/assets/restaurant-interior.jpg";
 
 export default function Reservations() {
   const handleReservation = () => {
-    // This would integrate with OpenTable, Calendly, or similar
-    window.open('https://calendly.com', '_blank');
+    // Direct phone booking
+    window.location.href = 'tel:07344104456';
   };
 
   return (
@@ -62,14 +62,24 @@ export default function Reservations() {
             </div>
 
             <div className="space-y-4">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={handleReservation}
-                className="w-full sm:w-auto"
-              >
-                Book a Table Now
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  onClick={handleReservation}
+                  className="w-full sm:w-auto"
+                >
+                  Call to Book
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => window.open('https://wa.me/447344104456?text=Hi,%20I%27d%20like%20to%20book%20a%20table', '_blank')}
+                  className="w-full sm:w-auto"
+                >
+                  Book via WhatsApp
+                </Button>
+              </div>
 
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p className="flex items-center gap-2">

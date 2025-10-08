@@ -3,9 +3,10 @@ import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Clock, Bike } from "lucide-react";
 
 export default function OrderOnline() {
-  const handleOrderClick = (platform: string) => {
-    // These would link to actual ordering platforms
-    console.log(`Order via ${platform}`);
+  const deliveryLinks = {
+    deliveroo: 'https://deliveroo.co.uk/menu/london/shepherds-bush/loma-thai',
+    ubereats: 'https://www.ubereats.com/gb/store/loma-thai',
+    justeat: 'https://www.just-eat.co.uk/restaurants-loma-thai-w12'
   };
 
   return (
@@ -56,7 +57,7 @@ export default function OrderOnline() {
           <Button 
             variant="hero" 
             size="lg"
-            onClick={() => handleOrderClick('Deliveroo')}
+            onClick={() => window.open(deliveryLinks.deliveroo, '_blank')}
             className="w-full sm:w-auto"
           >
             Order on Deliveroo
@@ -64,7 +65,7 @@ export default function OrderOnline() {
           <Button 
             variant="outline" 
             size="lg"
-            onClick={() => handleOrderClick('Uber Eats')}
+            onClick={() => window.open(deliveryLinks.ubereats, '_blank')}
             className="w-full sm:w-auto"
           >
             Order on Uber Eats
@@ -72,7 +73,7 @@ export default function OrderOnline() {
           <Button 
             variant="outline" 
             size="lg"
-            onClick={() => handleOrderClick('Just Eat')}
+            onClick={() => window.open(deliveryLinks.justeat, '_blank')}
             className="w-full sm:w-auto"
           >
             Order on Just Eat
