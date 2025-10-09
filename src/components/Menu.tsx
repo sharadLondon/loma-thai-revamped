@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import greenCurry from "@/assets/green-curry.jpg";
 import tomYum from "@/assets/tom-yum.jpg";
 import mangoStickyRice from "@/assets/mango-sticky-rice.jpg";
+import roastedDuckCurry from "@/assets/roasted-duck-curry.jpg";
+import octopusSalad from "@/assets/octopus-salad.jpg";
+import musselsPot from "@/assets/mussels-pot.jpg";
 
 const menuItems = [
   {
@@ -20,16 +23,19 @@ const menuItems = [
   {
     name: "Roasted Duck Curry",
     description: "Tender roasted duck in rich red curry sauce with pineapple and cherry tomatoes",
+    image: roastedDuckCurry,
     category: "Signature",
   },
   {
     name: "Octopus Salad",
     description: "Fresh octopus with Thai herbs, lime, chili, and crispy shallots",
+    image: octopusSalad,
     category: "Salad",
   },
   {
     name: "Mussels in the Pot",
     description: "Fresh mussels steamed with Thai herbs, basil, and aromatic broth",
+    image: musselsPot,
     category: "Seafood",
   },
   {
