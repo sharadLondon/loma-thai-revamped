@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import greenCurry from "@/assets/green-curry.jpg";
 import tomYum from "@/assets/tom-yum.jpg";
 import mangoStickyRice from "@/assets/mango-sticky-rice.jpg";
@@ -118,5 +119,3 @@ export default function Menu() {
     </section>
   );
 }
-
-import { Button } from "@/components/ui/button";

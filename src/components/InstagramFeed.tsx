@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
 import greenCurry from "@/assets/green-curry.jpg";
 import tomYum from "@/assets/tom-yum.jpg";
@@ -69,5 +70,3 @@ export default function InstagramFeed() {
     </section>
   );
 }
-
-import { Button } from "@/components/ui/button";
