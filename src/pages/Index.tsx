@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import OrderOnline from "@/components/OrderOnline";
@@ -12,14 +13,31 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <Menu />
-      <OrderOnline />
-      <Reservations />
-      <Reviews />
-      <InstagramFeed />
-      <Blog />
-      <Contact />
+      <Navigation />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="menu">
+        <Menu />
+      </div>
+      <div id="order">
+        <OrderOnline />
+      </div>
+      <div id="reservations">
+        <Reservations />
+      </div>
+      <div id="reviews">
+        <Reviews />
+      </div>
+      <div id="instagram">
+        <InstagramFeed />
+      </div>
+      <div id="blog">
+        <Blog />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
       <WhatsAppButton />
     </div>
