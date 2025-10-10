@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-8 animate-fade-in">
         {/* Logo/Name */}
         <div className="space-y-2">
-          <h1 className="text-6xl md:text-8xl font-bold tracking-wider text-gradient-gold animate-scale-in">
+          <h1 className="text-6xl md:text-8xl font-bold text-gradient-gold animate-scale-in font-loma">
             LOMA
           </h1>
           <p className="text-xl md:text-2xl text-foreground/90 font-light tracking-wide">

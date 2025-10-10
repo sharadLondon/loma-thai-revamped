@@ -51,7 +51,7 @@ export default function Menu() {
     <section className="section-padding bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient-gold">
+          <h2 className="text-4xl md:text-5xl font-bold text-gradient-gold font-loma">
             Our Menu
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
