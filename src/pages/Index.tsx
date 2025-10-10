@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import SignatureDishes from "@/components/SignatureDishes";
 import Menu from "@/components/Menu";
 import OrderOnline from "@/components/OrderOnline";
 import Reservations from "@/components/Reservations";
@@ -16,6 +17,9 @@ const Index = () => {
       <Navigation />
       <div id="hero">
         <Hero />
+      </div>
+      <div id="signature">
+        <SignatureDishes />
       </div>
       <div id="menu">
         <Menu />
