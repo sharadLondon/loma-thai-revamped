@@ -48,7 +48,7 @@ export default function Navigation() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#hero")}
-            className="text-2xl font-bold text-gradient-gold hover:opacity-80 transition-opacity"
+            className="text-2xl font-medium text-gradient-gold hover:opacity-80 transition-opacity font-loma"
           >
             LOMA
           </button>
