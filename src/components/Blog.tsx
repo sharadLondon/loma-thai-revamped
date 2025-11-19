@@ -1,31 +1,40 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
-import thaiIngredients from "@/assets/thai-ingredients.jpg";
-import thaiStreetFood from "@/assets/thai-street-food.jpg";
-import greenCurry from "@/assets/green-curry.jpg";
 
+// Import your real images
+import growHerbs from "@/assets/blog/growherbs.png";
+import spicyFood from "@/assets/blog/spicyfood.png";
+import healthyThaiDish from "@/assets/blog/healthythaidish.png";
+
+// Homepage Featured Posts (3 only)
 const blogPosts = [
   {
-    title: "The Secret Ingredients Behind Authentic Thai Curry",
-    excerpt: "Discover the aromatic herbs and spices that make Thai curries so distinctive. From galangal to kaffir lime leaves, learn about the ingredients that create those complex, layered flavors.",
-    image: thaiIngredients,
-    date: "March 15, 2024",
-    readTime: "5 min read",
+    title: "Does Spicy Food Help You Lose Weight? Let’s Find Out.",
+    excerpt:
+      "We all love a fiery Thai curry, but does heat really burn calories? Here’s what science says – and why spicy food still benefits your body in surprising ways.",
+    image: spicyFood,
+    date: "March 2025",
+    readTime: "2 min read",
+    link: "/blog/spicy-weightloss",
   },
   {
-    title: "Street Food Culture: Bangkok's Culinary Heart",
-    excerpt: "Explore the vibrant street food scene of Bangkok and how it influences our menu. From bustling night markets to family recipes passed down through generations.",
-    image: thaiStreetFood,
-    date: "March 8, 2024",
-    readTime: "7 min read",
+    title: "Growing Thai Herbs in the UK: A Beginner’s Guide",
+    excerpt:
+      "Thai basil, galangal, lemongrass... they’re amazing but annoyingly easy to kill. Here’s how to finally keep them alive in unpredictable UK weather.",
+    image: growHerbs,
+    date: "March 2025",
+    readTime: "3 min read",
+    link: "/blog/thai-herbs-uk",
   },
   {
-    title: "Mastering the Art of Thai Green Curry at Home",
-    excerpt: "Our head chef shares tips and techniques for creating restaurant-quality green curry in your own kitchen. Learn the balance of spice, sweetness, and aromatic herbs.",
-    image: greenCurry,
-    date: "March 1, 2024",
-    readTime: "6 min read",
+    title: "Why Thai Food Is Healthier Than You Think",
+    excerpt:
+      "Fresh herbs, light broths, bold spices, balanced flavours – Thai cuisine is naturally nourishing. Here’s what makes it both delicious and good for you.",
+    image: healthyThaiDish,
+    date: "March 2025",
+    readTime: "2 min read",
+    link: "/blog/why-thai-food-is-healthy",
   },
 ];
 
@@ -38,25 +47,27 @@ export default function Blog() {
             Stories & Insights
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Dive deeper into Thai cuisine, culture, and cooking techniques
+            Quick 1-minute reads about Thai flavours, culture, and everyday cooking tips
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Card 
+            <Card
               key={index}
               className="overflow-hidden hover-lift bg-card border-border group flex flex-col"
             >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              
+              <a href={post.link} className="block">
+                <div className="relative h-64 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+              </a>
+
               <div className="p-6 space-y-4 flex-1 flex flex-col">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
@@ -75,21 +86,20 @@ export default function Blog() {
                   {post.excerpt}
                 </p>
 
-                <Button 
-                  variant="ghost" 
-                  className="w-full justify-between group/btn"
-                >
-                  Read More
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                </Button>
+                <a href={post.link}>
+                  <Button variant="ghost" className="w-full justify-between group/btn">
+                    Read More
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                  </Button>
+                </a>
               </div>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            View All Articles
+          <Button asChild variant="outline" size="lg">
+            <a href="/blog">View All Articles</a>
           </Button>
         </div>
       </div>
