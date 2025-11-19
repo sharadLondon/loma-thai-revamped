@@ -1,73 +1,60 @@
-import React from "react";
+import Image from "next/image";
+import healthyDish from "@/assets/blog/healthythaidish.png";
 
 export default function WhyThaiFoodIsHealthy() {
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px" }}>
-      <title>Why Thai Food Is One of the Healthiest Cuisines in the World</title>
-      <meta
-        name="description"
-        content="Discover why Thai food is considered one of the healthiest cuisines in the world — from fresh herbs to metabolism-boosting spices and nutrient-rich ingredients."
+    <div className="max-w-3xl mx-auto py-16 px-6">
+      <h1 className="text-4xl font-bold mb-6">Why Thai Food Is So Healthy: A Delicious Breakdown</h1>
+
+      <Image
+        src={healthyDish}
+        alt="Healthy Thai dish"
+        className="rounded-lg mb-8"
+        priority
       />
 
-      <img
-        src="https://images.unsplash.com/photo-1604909052771-8d98945a1c26"
-        alt="Healthy Thai food"
-        style={{ width: "100%", borderRadius: "12px", marginBottom: "30px" }}
-      />
-
-      <h1>Why Thai Food Is One of the Healthiest Cuisines in the World</h1>
-
-      <p>
-        Thai cuisine is often celebrated for its bold flavours — but behind
-        every dish lies a natural balance of herbs, spices, and ingredients that
-        offer remarkable health benefits. From metabolism-boosting spices to
-        antioxidant-rich vegetables, Thai food provides far more than delicious
-        flavours. Here’s why Thai cuisine is often considered one of the
-        healthiest in the world.
+      <p className="mb-4">
+        Thai food is known for being vibrant, balanced, and incredibly flavourful — but it’s also one of the
+        healthiest cuisines in the world. From fresh ingredients to nutrient-rich herbs, Thai dishes naturally
+        support a healthier lifestyle without sacrificing taste.
       </p>
 
-      <h2>1. Fresh Herbs That Boost Immunity Naturally</h2>
-      <p>
-        Thai dishes rely heavily on herbs such as lemongrass, kaffir lime leaf,
-        Thai basil, and galangal. These ingredients support immune health,
-        reduce inflammation, and improve digestion — especially because they
-        are used fresh.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌱 Fresh Ingredients</h2>
+      <p className="mb-4">
+        Thai cooking relies heavily on fresh vegetables, lean proteins, and herbs. You’ll rarely find heavy creams
+        or unhealthy fats. Even curries are typically made with coconut milk, which contains beneficial MCTs.
       </p>
 
-      <h2>2. Spices That Help With Digestion & Metabolism</h2>
-      <p>
-        Thai cooking incorporates chilli, garlic, and ginger — all of which
-        stimulate metabolism and aid digestion. Capsaicin in chilli helps
-        improve calorie burn and may support heart health.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️ Spices Boost Metabolism</h2>
+      <p className="mb-4">
+        Chillies increase metabolism, reduce cravings, and add flavour without extra calories. Many spicy Thai
+        dishes can aid weight management naturally.
       </p>
 
-      <h2>3. Coconut Milk: Healthy Fats for Energy</h2>
-      <p>
-        Coconut milk contains medium-chain fatty acids, which the body converts
-        into energy more efficiently. In moderation, it supports brain function,
-        immune health, and sustained energy.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🍋 Herbs with Healing Properties</h2>
+      <p className="mb-4">
+        Lemongrass, galangal, kaffir lime, and Thai basil aren’t just flavourful — they have antibacterial,
+        anti-inflammatory, and antioxidant benefits used in traditional Thai medicine.
       </p>
 
-      <h2>4. Balanced Plates With Proteins & Vegetables</h2>
-      <p>
-        Thai meals naturally combine lean proteins, vegetables, herbs, and rice
-        or noodles. This creates balanced nutrition and stable energy levels.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🥗 Balanced Flavours, Balanced Eating</h2>
+      <p className="mb-4">
+        Thai cuisine focuses on balance — sweet, sour, salty, spicy, and umami. This encourages mindful eating,
+        smaller portions, and satisfaction without excess.
       </p>
 
-      <h2>5. Naturally Gluten-Free & Often Dairy-Free</h2>
-      <p>
-        Many Thai dishes are naturally suitable for gluten-free or dairy-free
-        diets, making the cuisine accessible and healthy for many people.
-      </p>
+      <h2 className="text-2xl font-semibold mt-10 mb-3">Healthier Choices to Order</h2>
+      <ul className="list-disc ml-6 mb-6">
+        <li>Tom Yum soup</li>
+        <li>Green papaya salad</li>
+        <li>Stir-fried vegetables with chicken</li>
+        <li>Thai basil dishes</li>
+      </ul>
 
-      <h2>Conclusion</h2>
       <p>
-        Thai food is far more than a treat for the senses — it’s a cuisine built
-        on fresh produce, healing herbs, and nutrient-rich ingredients. Whether
-        you prefer mild or spicy dishes, Thai food offers a healthy and
-        satisfying way to nourish your body.
+        Thai food proves that healthy eating doesn’t have to be boring. It can be colourful, bold, and deeply
+        nourishing — all in one delicious bowl.
       </p>
     </div>
   );
 }
-
