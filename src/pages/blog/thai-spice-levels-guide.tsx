@@ -1,70 +1,67 @@
-import React from "react";
+import Image from "next/image";
+import spiceGuide from "@/assets/blog/spiceguide.png";
 
 export default function ThaiSpiceLevelsGuide() {
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px" }}>
-      <title>A Beginner’s Guide to Thai Spice Levels</title>
-      <meta
-        name="description"
-        content="Understand Thai spice levels from mild to Thai-spicy with this simple guide. Perfect for beginners exploring Thai cuisine."
+    <div className="max-w-3xl mx-auto py-16 px-6">
+      <h1 className="text-4xl font-bold mb-6">Thai Spice Levels Guide: From Mild to Fire</h1>
+
+      <Image
+        src={spiceGuide}
+        alt="Thai spice level guide"
+        className="rounded-lg mb-8"
+        priority
       />
 
-      <img
-        src="https://images.unsplash.com/photo-1598511728185-5bb18bc2597b"
-        alt="Thai spices and chillies"
-        style={{ width: "100%", borderRadius: "12px", marginBottom: "30px" }}
-      />
-
-      <h1>A Beginner’s Guide to Thai Spice Levels</h1>
-
-      <p>
-        If you’re new to Thai food, the spice levels can feel confusing. What
-        counts as mild? What is considered “Thai spicy”? This guide breaks down
-        the different heat levels so you can confidently choose the right dish —
-        whether you love gentle flavours or fiery heat.
+      <p className="mb-4">
+        Thai cuisine is famous for its bold heat — but not all dishes are created equal. Whether you're new to
+        spicy food or a daring chilli addict, understanding Thai spice levels helps you choose dishes comfortably
+        without ruining your meal (or your evening).
       </p>
 
-      <h2>1. Mild Thai Dishes — Full Flavour, No Heat</h2>
-      <p>
-        Mild dishes include coconut-based curries, stir-fries without chilli,
-        and noodle dishes like Pad Thai. They offer rich flavour without the
-        burn — ideal for beginners.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️ No Spice – “Mai Phet”</h2>
+      <p className="mb-4">
+        Many Thai dishes can be made without chilli at all. This is ideal for kids, spice-sensitive diners, or
+        anyone who wants pure flavour without heat. Dishes like Pad Thai, fried rice, and satay are naturally mild.
       </p>
 
-      <h2>2. Medium Spice — A Gentle Kick</h2>
-      <p>
-        Medium spice dishes include small amounts of chilli, offering warmth
-        without overwhelming heat. Great for diners exploring Thai flavours.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️🌶️ Mild – “Phet Nit Noi”</h2>
+      <p className="mb-4">
+        A gentle warmth. Great for beginners. Think of a mild green curry or a lightly spiced papaya salad.  
+        You’ll feel the heat, but it won’t linger.
       </p>
 
-      <h2>3. Hot — Classic Thai Heat</h2>
-      <p>
-        Hot dishes contain fresh chillies and offer intense heat balanced with
-        deep flavours. This is the typical level many locals enjoy.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️🌶️🌶️ Medium – “Phet”</h2>
+      <p className="mb-4">
+        This is the level most Thais casually eat. Enough heat to spark a sweat but still balanced with sweetness,
+        sourness, and fragrance. Spicy fried rice, panang curry, and tom yum usually sit here.
       </p>
 
-      <h2>4. Thai-Spicy — For the Brave</h2>
-      <p>
-        “Thai spicy” is significantly hotter than what many Western palates are
-        used to. It’s bold, fiery, and best suited for those who enjoy powerful
-        chilli intensity.
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️🌶️🌶️🌶️ Hot – “Phet Mak”</h2>
+      <p className="mb-4">
+        Serious spice-lovers territory. Dishes like spicy basil stir-fry (Pad Kra Pao) or red curry often reach
+        this level. Expect numb lips and possibly questioning your life choices.
       </p>
 
-      <h2>5. Tips for Controlling Heat</h2>
-      <ul>
-        <li>Ask for less spice if unsure</li>
-        <li>Drink milk, not water, to reduce chilli burn</li>
-        <li>Choose coconut-based dishes for softer heat</li>
-        <li>Start mild and work upward</li>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">🌶️🌶️🌶️🌶️🌶️ Thai Hot – “Phet Thai Thai”</h2>
+      <p className="mb-4">
+        If you order this, you know what you're doing. This is authentic Thai street-food heat — fresh bird’s eye
+        chillies chopped in spoonfuls. Approach with caution.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-3">How to Order Spice Levels in Thai</h2>
+      <ul className="list-disc ml-6 mb-6">
+        <li>Mai Phet — No spice</li>
+        <li>Phet Nit Noi — A little spicy</li>
+        <li>Phet — Medium spicy</li>
+        <li>Phet Mak — Very spicy</li>
+        <li>Phet Thai Thai — Thai-level spicy</li>
       </ul>
 
-      <h2>Conclusion</h2>
-      <p>
-        Thai food offers delicious choices at every spice level. Understanding
-        the heat scale helps make every meal enjoyable — from mild to Thai
-        spicy.
+      <p className="mt-6">
+        Whether you like mild warmth or chilli madness, Thai cuisine always offers the perfect balance of heat
+        and flavour. Just choose your level — and enjoy the ride!
       </p>
     </div>
   );
 }
-
