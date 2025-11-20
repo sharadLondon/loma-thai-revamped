@@ -5,7 +5,14 @@ export default function SpicyWeightLoss() {
     <BlogLayout
       title="Is Spicy Food a Weight-Loss Hack… or Just a Hot Lie?"
       description="The truth about spicy food, metabolism, cravings, and what actually happens when you turn up the heat."
-      image="/images/blog/spicy.jpg"
+      import spicyImg from "../../assets/blog/spicyfood.png";
+
+<BlogLayout
+  title="Is Spicy Food a Weight-Loss Hack… or Just a Hot Lie?"
+  description="The truth about spicy food, metabolism, cravings, and what actually happens when you turn up the heat."
+  image={spicyImg}
+/>
+
     >
       <h2>🔥 The Myth: “Spicy food burns fat.”</h2>
       <p>
