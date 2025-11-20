@@ -1,61 +1,41 @@
-import React from "react";
+import BlogLayout from "../../components/BlogLayout";
+import Image from "next/image";
+import noodlesImg from "../../assets/blog/noodlesthai.png";
 
 export default function ThaiNoodleGuide() {
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px" }}>
-      <title>The Ultimate Guide to Thai Noodles</title>
-      <meta
-        name="description"
-        content="Pad Thai, Drunken Noodles, Pad See Ew and more — discover your perfect Thai noodle dish with this simple guide."
-      />
-
-      <img
-        src="https://images.unsplash.com/photo-1589308078055-1880a56a0421"
-        alt="Thai noodles variety"
-        style={{ width: "100%", borderRadius: "12px", marginBottom: "30px" }}
-      />
-
-      <h1>The Ultimate Guide to Thai Noodles</h1>
-
+    <BlogLayout
+      title="Guide to Thai Noodles: Choosing the Right One"
+      description="Rice noodles, egg noodles, glass noodles — here’s how to understand the key types and when to use them."
+      image={noodlesImg}
+    >
       <p>
-        Thai noodles are world-famous — smoky, sweet, spicy, savoury, and
-        endlessly versatile. Whether you're craving something light or bold,
-        Thai cuisine offers a noodle dish for every mood. Here’s a simple guide
-        to help you choose your perfect bowl.
+        Thai cuisine uses a surprisingly wide range of noodles — each with its own texture, flavour, and perfect dish.
       </p>
 
-      <h2>1. Pad Thai — Sweet, Tangy, Perfect for Beginners</h2>
+      <h2>🍜 Rice Noodles</h2>
       <p>
-        Pad Thai is the best-known Thai noodle dish for a reason. Expect sweet
-        tamarind, crunchy peanuts, and soft rice noodles. A perfect starter dish
-        for newcomers.
+        Used in Pad Thai, Pad See Ew, and Drunken Noodles. Soft, chewy, and absorbs flavour beautifully.
       </p>
 
-      <h2>2. Drunken Noodles (Pad Kee Mao) — Spicy & Addictive</h2>
+      <h2>🥚 Egg Noodles</h2>
       <p>
-        A favourite for spice lovers. Made with wide noodles, basil, garlic,
-        vegetables, and chillies, this dish is bold, fiery, and incredibly
-        satisfying.
+        Bright yellow, slightly springy, and perfect for soups or dry egg noodle dishes.
       </p>
 
-      <h2>3. Pad See Ew — Sweet, Smoky, Comforting</h2>
+      <h2>✨ Glass Noodles</h2>
       <p>
-        Pad See Ew features thick noodles stir-fried with soy sauce, tender
-        vegetables, and optional protein. Slightly sweet and deeply comforting.
+        Made from mung bean. Silky and perfect for salads like Yum Woon Sen.
       </p>
 
-      <h2>4. Thai Soup Noodles — Light & Aromatic</h2>
+      <h2>🍲 Wide Rice Sheets</h2>
       <p>
-        Soup noodles offer clean flavours with herbs, broth, and gentle spices.
-        Ideal for those who want lighter, fragrant dishes.
+        Thick, wide, and great for wok stir-fries with smoky flavour.
       </p>
 
-      <h2>Conclusion</h2>
       <p>
-        From spicy to sweet, comforting to bold, Thai noodles offer something
-        for every taste. Whether you’re new to Thai cuisine or already a fan,
-        this guide helps you discover your next favourite dish.
+        Choosing the right noodle helps you recreate restaurant-level dishes at home — effortlessly.
       </p>
-    </div>
+    </BlogLayout>
   );
 }
