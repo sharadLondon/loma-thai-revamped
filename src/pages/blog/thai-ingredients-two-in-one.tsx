@@ -1,38 +1,47 @@
 import BlogLayout from "../../components/BlogLayout";
+import Image from "next/image";
+import ingredientsImg from "../../assets/blog/top5ingredients.png";
 
 export default function ThaiIngredientsTwoInOne() {
   return (
     <BlogLayout
-      title="Top 5 Thai Ingredients with Two-in-One Magic"
-      description="The flavours that make Thai food unforgettable — and the health benefits hiding behind them."
-      image="/images/blog/ingredients.jpg"
+      title="5 Essential Thai Ingredients (And How to Use Them)"
+      description="The must-have ingredients that bring real Thai flavour into your home kitchen — explained simply."
+      image={ingredientsImg}
     >
       <p>
-        Thai cooking hits differently — not just because it tastes amazing but
-        because the ingredients do double duty. Here are the top 5 Thai flavour
-        bombs that also make your body happy.
+        Thai cuisine is built on balance — salty, spicy, sour, sweet, and umami.  
+        Here are 5 must-have ingredients that do the heavy lifting in most Thai dishes.
       </p>
 
-      <h2>1. Lemongrass</h2>
-      <p>Bright, citrusy, fresh. Helps digestion + calms the stomach.</p>
-
-      <h2>2. Kaffir Lime Leaf</h2>
-      <p>That iconic Thai aroma. Great for mood + stress relief.</p>
-
-      <h2>3. Thai Basil</h2>
-      <p>Peppery and sweet. Anti-inflammatory + boosts focus.</p>
-
-      <h2>4. Galangal</h2>
-      <p>Warm, sharp, ginger-but-fancier. Supports immunity.</p>
-
-      <h2>5. Bird’s Eye Chilli</h2>
-      <p>Heat that makes you feel alive. Boosts metabolism + endorphins.</p>
-
-      <h2>✨ The Bottom Line</h2>
+      <h2>🌶️ 1. Fish Sauce</h2>
       <p>
-        Thai food tastes incredible because these ingredients are naturally
-        powerful. At Loma Thai, we use them the way they’re meant to be used —
-        fresh, balanced, and full of character.
+        The salty backbone of Thai flavour. Add to curries, stir-fries, soups, dips — everything.
+      </p>
+
+      <h2>🥥 2. Coconut Milk</h2>
+      <p>
+        Rich, creamy, and perfect for curries like green, red, and Panang.  
+        Use full-fat for the best flavour.
+      </p>
+
+      <h2>🍋 3. Kaffir Lime Leaves</h2>
+      <p>
+        Irreplaceable fragrance. Add whole leaves to soups and curries, then remove before serving.
+      </p>
+
+      <h2>🌿 4. Thai Basil</h2>
+      <p>
+        Peppery, slightly sweet, and essential for dishes like Pad Krapow and Green Curry.
+      </p>
+
+      <h2>🔥 5. Chillies</h2>
+      <p>
+        Bird’s eye chillies bring the heat. Use sparingly — or generously if you dare!
+      </p>
+
+      <p>
+        Master these five ingredients, and you’ll unlock 80% of Thai cooking at home.
       </p>
     </BlogLayout>
   );
