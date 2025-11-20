@@ -1,60 +1,52 @@
+import BlogLayout from "../../components/BlogLayout";
 import Image from "next/image";
-import herbsImage from "@/assets/blog/growherbs.png";
+import herbsImg from "../../assets/blog/growherbs.png";
 
 export default function ThaiHerbsUK() {
   return (
-    <div className="max-w-3xl mx-auto py-16 px-6">
-      <h1 className="text-4xl font-bold mb-6">Growing Thai Herbs in the UK: A Simple Beginner’s Guide</h1>
+    <BlogLayout
+      title="Essential Thai Herbs You Should Grow at Home"
+      description="Easy guide to growing Thai basil, lemongrass, and kaffir lime at home — even in UK weather."
+      image={herbsImg}
+    >
 
-      <Image
-        src={herbsImage}
-        alt="Growing Thai herbs"
-        className="rounded-lg mb-8"
-        priority
-      />
-
-      <p className="mb-4">
-        Fresh Thai herbs are the heart of Thai cooking — bright, aromatic, and impossible to fully replace with
-        dried versions. The good news? You can grow many of them right here in the UK, even with our unpredictable
-        weather.
+      <p>
+        Fresh Thai herbs are the heart of Thai cooking — bright, aromatic, and impossible to fully replace with dried versions.
+        The good news? You can grow many of them in the UK, even with unpredictable weather.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">🍃 Thai Basil</h2>
-      <p className="mb-4">
-        Sweet, peppery, and essential for stir-fries and curries. Thai basil grows very well indoors near a sunny
-        window. Water regularly, avoid over-watering, and harvest often to encourage growth.
+      <h2>🍃 Thai Basil</h2>
+      <p>
+        Thai basil grows well indoors near sunlight. Water regularly and harvest often to keep it bushy and flavourful.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">🍃 Lemongrass</h2>
-      <p className="mb-4">
-        Surprisingly easy to grow from supermarket stalks. Simply place them in water until roots form, then plant
-        in a pot. Keep warm and moist. Perfect for soups, marinades, and teas.
+      <h2>🍃 Lemongrass</h2>
+      <p>
+        Start lemongrass from supermarket stalks. Root them in water, then plant in a warm spot. Great for soups and teas.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">🍃 Kaffir Lime Leaves</h2>
-      <p className="mb-4">
-        A dwarf kaffir lime tree grows beautifully indoors. The leaves add unmatched fragrance to curries and soups.
-        Just give it light, warmth, and occasional misting.
+      <h2>🍃 Kaffir Lime Leaves</h2>
+      <p>
+        A dwarf kaffir lime tree grows beautifully indoors. The fragrant leaves are essential for curries and soups.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">🍃 Coriander</h2>
-      <p className="mb-4">
-        Coriander bolts quickly, but if you plant small amounts regularly, you'll always have fresh leaves ready.
-        Use in salads, garnishes, and dipping sauces.
+      <h2>🍃 Coriander</h2>
+      <p>
+        Plant coriander often because it bolts quickly. Fresh leaves are perfect for salads and garnishes.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-3">Tips for Growing Thai Herbs Indoors</h2>
-      <ul className="list-disc ml-6 mb-6">
+      <h2>🌱 Tips for Growing Thai Herbs Indoors</h2>
+      <ul>
         <li>Use pots with drainage holes</li>
-        <li>Place herbs in bright indirect light</li>
-        <li>Mist leaves weekly (especially kaffir lime)</li>
-        <li>Harvest little and often</li>
+        <li>Give herbs indirect light</li>
+        <li>Mist leaves weekly</li>
+        <li>Harvest small amounts often</li>
       </ul>
 
       <p>
-        With just a few pots and a sunny corner, you can enjoy fresh Thai flavours all year round — no trip to the
-        Asian supermarket required.
+        With a few pots and a sunny window, you can enjoy fresh Thai flavours all year round.
       </p>
-    </div>
+
+    </BlogLayout>
   );
 }
