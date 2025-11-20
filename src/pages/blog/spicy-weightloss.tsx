@@ -1,6 +1,5 @@
 import BlogLayout from "../../components/BlogLayout";
-import spicyImg from "../../assets/blog/spicyfood.png";
-
+import spicyImg from "../../public/assets/blog/spicyfood.png";
 export default function SpicyWeightLoss() {
   return (
     <BlogLayout
