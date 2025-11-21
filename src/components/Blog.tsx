@@ -1,21 +1,21 @@
 "use client";
 
-import Link from "next/link";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "./ui/card";
+import { Button } from "./ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 
-import growHerbs from "@/assets/blog/growherbs.png";
-import spicyFood from "@/assets/blog/spicyfood.png";
-import top5 from "@/assets/blog/top5ingredients.png";
-import spiceGuide from "@/assets/blog/spiceguide.png";
-import noodlesThai from "@/assets/blog/noodlesthai.png";
-import healthyDish from "@/assets/blog/healthythaidish.png";
+import growHerbs from "../assets/blog/growherbs.png";
+import spicyFood from "../assets/blog/spicyfood.png";
+import top5 from "../assets/blog/top5ingredients.png";
+import spiceGuide from "../assets/blog/spiceguide.png";
+import noodlesThai from "../assets/blog/noodlesthai.png";
+import healthyDish from "../assets/blog/healthythaidish.png";
 
 const blogPosts = [
   {
     title: "Does Spicy Food Burn Fat? Let’s Unpack the Truth",
-    excerpt: "Everyone says spicy food boosts metabolism — but how much does it REALLY help? A quick, honest breakdown.",
+    excerpt:
+      "Everyone says spicy food boosts metabolism — but how much does it REALLY help? A quick, honest breakdown.",
     image: spicyFood,
     date: "March 20, 2024",
     readTime: "2 min read",
@@ -23,7 +23,8 @@ const blogPosts = [
   },
   {
     title: "My First Thai Herb Garden (UK Edition)",
-    excerpt: "Thai basil, lemongrass, kaffir lime… and the VERY real struggle of keeping them alive in British weather.",
+    excerpt:
+      "Thai basil, lemongrass, kaffir lime… and the VERY real struggle of keeping them alive in British weather.",
     image: growHerbs,
     date: "March 18, 2024",
     readTime: "2 min read",
@@ -31,7 +32,8 @@ const blogPosts = [
   },
   {
     title: "Top 5 Thai Ingredients That Taste Good AND Do You Good",
-    excerpt: "Flavour + health benefits in one hit. Simple, fun, and actually useful.",
+    excerpt:
+      "Flavour + health benefits in one hit. Simple, fun, and actually useful.",
     image: top5,
     date: "March 16, 2024",
     readTime: "3 min read",
@@ -39,7 +41,8 @@ const blogPosts = [
   },
   {
     title: "The Thai Spice Level Guide (Made Simple)",
-    excerpt: "From mild to ‘why did I do this?’ — UK-friendly breakdown of Thai heat levels.",
+    excerpt:
+      "From mild to ‘why did I do this?’ — UK-friendly breakdown of Thai heat levels.",
     image: spiceGuide,
     date: "March 14, 2024",
     readTime: "1 min read",
@@ -47,7 +50,8 @@ const blogPosts = [
   },
   {
     title: "Thai Noodles 101",
-    excerpt: "Pad Thai, Pad See Ew, Drunken Noodles — what’s the actual difference?",
+    excerpt:
+      "Pad Thai, Pad See Ew, Drunken Noodles — what’s the actual difference?",
     image: noodlesThai,
     date: "March 12, 2024",
     readTime: "2 min read",
@@ -55,7 +59,8 @@ const blogPosts = [
   },
   {
     title: "Why Thai Food Is Secretly Healthy",
-    excerpt: "Herbs, spices, balance, freshness — Thai food does a LOT more for the body than people realise.",
+    excerpt:
+      "Herbs, spices, balance, freshness — Thai food does a LOT more for the body than people realise.",
     image: healthyDish,
     date: "March 10, 2024",
     readTime: "3 min read",
@@ -78,11 +83,11 @@ export default function Blog() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Link key={index} href={`/blog/${post.slug}`}>
+            <a key={index} href={`/blog/${post.slug}`}>
               <Card className="overflow-hidden hover-lift bg-card border-border group flex flex-col cursor-pointer">
                 <div className="relative h-64 overflow-hidden">
                   <img
-                    src={post.image.src}
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -106,13 +111,16 @@ export default function Blog() {
                     {post.excerpt}
                   </p>
 
-                  <Button variant="ghost" className="w-full justify-between group/btn">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-between group/btn"
+                  >
                     Read More
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 </div>
               </Card>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
