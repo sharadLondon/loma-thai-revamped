@@ -15,34 +15,21 @@ export default function ThaiSpiceLevelsGuide() {
       </p>
 
       <h2>🌶 Mild</h2>
-      <p>
-        Just a hint of warmth. Great for beginners or kids.
-      </p>
+      <p>Just a hint of warmth. Great for beginners or kids.</p>
 
       <h2>🌶🌶 Medium</h2>
-      <p>
-        Balanced heat. Enough kick to feel Thai flavour without overwhelming.
-      </p>
+      <p>Balanced heat. Enough kick to feel Thai flavour without overwhelming.</p>
 
       <h2>🌶🌶🌶 Hot</h2>
-      <p>
-        Typical Thai spice. Expect real warmth and flavour intensity.
-      </p>
+      <p>Typical Thai spice. Expect real warmth and flavour intensity.</p>
 
       <h2>🌶🌶🌶🌶 Extra Hot</h2>
-      <p>
-        For people who enjoy the burn. You will sweat.
-      </p>
+      <p>For people who enjoy the burn. You will sweat.</p>
 
       <h2>🌶🌶🌶🌶🌶 Thai Level</h2>
-      <p>
-        Not recommended unless you grew up with chillies.  
-        Proceed with caution (and maybe milk).
-      </p>
+      <p>Not recommended unless you grew up with chillies. Proceed with caution (and maybe milk).</p>
 
-      <p>
-        Now you can order with confidence — and avoid accidental destruction.
-      </p>
+      <p>Now you can order with confidence — and avoid accidental destruction.</p>
     </BlogLayout>
   );
 }
