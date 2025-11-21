@@ -14,28 +14,18 @@ export default function ThaiNoodleGuide() {
       </p>
 
       <h2>🍜 Rice Noodles</h2>
-      <p>
-        Used in Pad Thai, Pad See Ew, and Drunken Noodles. Soft, chewy, and absorbs flavour beautifully.
-      </p>
+      <p>Used in Pad Thai, Pad See Ew, and Drunken Noodles. Soft, chewy, and absorbs flavour beautifully.</p>
 
       <h2>🥚 Egg Noodles</h2>
-      <p>
-        Bright yellow, slightly springy, and perfect for soups or dry egg noodle dishes.
-      </p>
+      <p>Bright yellow, slightly springy, and perfect for soups or dry egg noodle dishes.</p>
 
       <h2>✨ Glass Noodles</h2>
-      <p>
-        Made from mung bean. Silky and perfect for salads like Yum Woon Sen.
-      </p>
+      <p>Made from mung bean. Silky and perfect for salads like Yum Woon Sen.</p>
 
       <h2>🍲 Wide Rice Sheets</h2>
-      <p>
-        Thick, wide, and great for wok stir-fries with smoky flavour.
-      </p>
+      <p>Thick, wide, and great for wok stir-fries with smoky flavour.</p>
 
-      <p>
-        Choosing the right noodle helps you recreate restaurant-level dishes at home — effortlessly.
-      </p>
+      <p>Choosing the right noodle helps you recreate restaurant-level dishes at home — effortlessly.</p>
     </BlogLayout>
   );
 }
