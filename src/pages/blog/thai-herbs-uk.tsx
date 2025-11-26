@@ -7,7 +7,7 @@ export default function ThaiHerbsUK() {
     <BlogLayout
       title="Essential Thai Herbs You Should Grow at Home"
       description="Easy guide to growing Thai basil, lemongrass, and kaffir lime at home — even in UK weather."
-      image={herbsImg}
+      image="/blog/growherbs.png"
     >
       <p>
         Fresh Thai herbs are the heart of Thai cooking — bright, aromatic, and impossible to fully replace with dried
