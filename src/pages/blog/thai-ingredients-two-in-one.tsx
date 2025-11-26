@@ -7,7 +7,7 @@ export default function ThaiIngredientsTwoInOne() {
     <BlogLayout
       title="5 Essential Thai Ingredients (And How to Use Them)"
       description="The must-have ingredients that bring real Thai flavour into your home kitchen — explained simply."
-      image={ingredientsImg}
+      image="/blog/top5ingredients.png"
     >
       <p>
         Thai cuisine is built on balance — salty, spicy, sour, sweet, and umami. Here are 5 must-have ingredients that
