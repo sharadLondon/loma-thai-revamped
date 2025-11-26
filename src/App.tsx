@@ -15,7 +15,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
 
-        {/* BLOG ROUTES */}
         <Route path="/blog/why-thai-food-is-healthy" element={<WhyThaiFoodIsHealthy />} />
         <Route path="/blog/spicy-weightloss" element={<SpicyWeightLoss />} />
         <Route path="/blog/thai-noodle-guide" element={<ThaiNoodleGuide />} />
