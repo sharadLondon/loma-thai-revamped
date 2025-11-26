@@ -7,7 +7,7 @@ export default function ThaiSpiceLevelsGuide() {
     <BlogLayout
       title="Thai Spice Levels Explained: From Mild to ‘Send Help’"
       description="A simple guide to understanding real Thai spice levels — and how to order the right heat for you."
-      image={spiceImg}
+      image="/blog/spiceguide.png"
     >
       <p>
         Thai spice levels can be confusing — mild here isn’t mild everywhere else.  
