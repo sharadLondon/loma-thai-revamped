@@ -7,7 +7,7 @@ export default function ThaiNoodleGuide() {
     <BlogLayout
       title="Guide to Thai Noodles: Choosing the Right One"
       description="Rice noodles, egg noodles, glass noodles — here’s how to understand the key types and when to use them."
-      image={noodlesImg}
+      image="/blog/noodlesthai.png"
     >
       <p>
         Thai cuisine uses a surprisingly wide range of noodles — each with its own texture, flavour, and perfect dish.
