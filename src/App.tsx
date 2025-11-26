@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "@/home"; 
+import Home from "@/pages/index";
 
 import SpicyWeightloss from "@/pages/blog/spicy-weightloss";
 import ThaiHerbsUk from "@/pages/blog/thai-herbs-uk";
