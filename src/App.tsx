@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "@/pages/index";
+import Index from "@/pages/index";
 
 // BLOG PAGES
 import WhyThaiFoodIsHealthy from "@/pages/blog/why-thai-food-is-healthy";
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Index />} />
 
         {/* BLOG ROUTES */}
         <Route path="/blog/why-thai-food-is-healthy" element={<WhyThaiFoodIsHealthy />} />
