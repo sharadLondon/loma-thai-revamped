@@ -1,29 +1,29 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "@/pages/index";
 
-import SpicyWeightloss from "@/pages/blog/spicy-weightloss";
-import ThaiHerbsUk from "@/pages/blog/thai-herbs-uk";
-import ThaiNoodles from "@/pages/blog/thai-noodles";
-import ThaiIngredients from "@/pages/blog/thai-ingredients";
-import ThaiSpices from "@/pages/blog/thai-spices";
-import ThaiCookingGuide from "@/pages/blog/thai-cooking-guide";
+// BLOG PAGES
+import WhyThaiFoodIsHealthy from "@/pages/blog/why-thai-food-is-healthy";
+import SpicyWeightLoss from "@/pages/blog/spicy-weightloss";
+import ThaiNoodleGuide from "@/pages/blog/thai-noodle-guide";
+import ThaiHerbsUK from "@/pages/blog/thai-herbs-uk";
+import ThaiIngredientsTwoInOne from "@/pages/blog/thai-ingredients-two-in-one";
+import ThaiSpiceLevelsGuide from "@/pages/blog/thai-spice-levels-guide";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Blog Pages */}
-        <Route path="/blog/spicy-weightloss" element={<SpicyWeightloss />} />
-        <Route path="/blog/thai-herbs-uk" element={<ThaiHerbsUk />} />
-        <Route path="/blog/thai-noodles" element={<ThaiNoodles />} />
-        <Route path="/blog/thai-ingredients" element={<ThaiIngredients />} />
-        <Route path="/blog/thai-spices" element={<ThaiSpices />} />
-        <Route path="/blog/thai-cooking-guide" element={<ThaiCookingGuide />} />
+        {/* BLOG ROUTES */}
+        <Route path="/blog/why-thai-food-is-healthy" element={<WhyThaiFoodIsHealthy />} />
+        <Route path="/blog/spicy-weightloss" element={<SpicyWeightLoss />} />
+        <Route path="/blog/thai-noodle-guide" element={<ThaiNoodleGuide />} />
+        <Route path="/blog/thai-herbs-uk" element={<ThaiHerbsUK />} />
+        <Route path="/blog/thai-ingredients-two-in-one" element={<ThaiIngredientsTwoInOne />} />
+        <Route path="/blog/thai-spice-levels-guide" element={<ThaiSpiceLevelsGuide />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
