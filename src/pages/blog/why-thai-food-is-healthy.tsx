@@ -7,7 +7,8 @@ export default function WhyThaiFoodIsHealthy() {
     <BlogLayout
       title="Why Thai Food Is One of the Healthiest Cuisines on the Planet"
       description="Fresh herbs, balanced flavours, lean proteins — here’s why Thai food naturally supports a healthier lifestyle."
-      image={healthyImg}
+      image="/blog/healthythaidish.png"
+
     >
       <p>
         Thai food is naturally fresh, balanced, and nutrient-rich. Unlike heavy Western dishes, Thai meals rely on herbs,
