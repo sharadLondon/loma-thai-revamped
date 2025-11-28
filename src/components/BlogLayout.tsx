@@ -22,7 +22,7 @@ export default function BlogLayout({
       </p>
 
       <div style={{ marginBottom: "2rem" }}>
-        <Image src={image} alt={title} width={900} height={500} />
+        <img src={image} alt={title} style={{ width: "100%", height: "auto", maxHeight: "500px", objectFit: "cover" }} />
       </div>
 
       <article style={{ fontSize: "1.1rem", lineHeight: "1.7" }}>

@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import spicyImg from "../../assets/blog/spicyfood.png";
 
 export default function SpicyWeightLoss() {
   return (

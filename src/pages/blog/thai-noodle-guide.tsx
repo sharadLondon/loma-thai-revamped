@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import noodlesImg from "../../assets/blog/noodlesthai.png";
 
 export default function ThaiNoodleGuide() {
   return (

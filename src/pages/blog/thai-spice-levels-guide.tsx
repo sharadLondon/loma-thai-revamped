@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import spiceImg from "../../assets/blog/spiceguide.png";
 
 export default function ThaiSpiceLevelsGuide() {
   return (

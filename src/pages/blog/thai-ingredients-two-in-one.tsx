@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import ingredientsImg from "../../assets/blog/top5ingredients.png";
 
 export default function ThaiIngredientsTwoInOne() {
   return (
