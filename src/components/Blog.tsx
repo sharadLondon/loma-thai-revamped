@@ -4,19 +4,12 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 
-import growHerbs from "../assets/blog/growherbs.png";
-import spicyFood from "../assets/blog/spicyfood.png";
-import top5 from "../assets/blog/top5ingredients.png";
-import spiceGuide from "../assets/blog/spiceguide.png";
-import noodlesThai from "../assets/blog/noodlesthai.png";
-import healthyDish from "../assets/blog/healthythaidish.png";
-
 const blogPosts = [
   {
-    title: "Does Spicy Food Burn Fat? Let’s Unpack the Truth",
+    title: "Does Spicy Food Burn Fat? Let's Unpack the Truth",
     excerpt:
       "Everyone says spicy food boosts metabolism — but how much does it REALLY help? A quick, honest breakdown.",
-    image: spicyFood,
+    image: "/blog/spicyfood.png",
     date: "March 20, 2024",
     readTime: "2 min read",
     slug: "spicy-weightloss",
@@ -25,7 +18,7 @@ const blogPosts = [
     title: "My First Thai Herb Garden (UK Edition)",
     excerpt:
       "Thai basil, lemongrass, kaffir lime… and the VERY real struggle of keeping them alive in British weather.",
-    image: growHerbs,
+    image: "/blog/growherbs.png",
     date: "March 18, 2024",
     readTime: "2 min read",
     slug: "thai-herbs-uk",
@@ -34,7 +27,7 @@ const blogPosts = [
     title: "Top 5 Thai Ingredients That Taste Good AND Do You Good",
     excerpt:
       "Flavour + health benefits in one hit. Simple, fun, and actually useful.",
-    image: top5,
+    image: "/blog/top5ingredients.png",
     date: "March 16, 2024",
     readTime: "3 min read",
     slug: "thai-ingredients-two-in-one",
@@ -42,8 +35,8 @@ const blogPosts = [
   {
     title: "The Thai Spice Level Guide (Made Simple)",
     excerpt:
-      "From mild to ‘why did I do this?’ — UK-friendly breakdown of Thai heat levels.",
-    image: spiceGuide,
+      "From mild to 'why did I do this?' — UK-friendly breakdown of Thai heat levels.",
+    image: "/blog/spiceguide.png",
     date: "March 14, 2024",
     readTime: "1 min read",
     slug: "thai-spice-levels-guide",
@@ -51,8 +44,8 @@ const blogPosts = [
   {
     title: "Thai Noodles 101",
     excerpt:
-      "Pad Thai, Pad See Ew, Drunken Noodles — what’s the actual difference?",
-    image: noodlesThai,
+      "Pad Thai, Pad See Ew, Drunken Noodles — what's the actual difference?",
+    image: "/blog/noodlesthai.png",
     date: "March 12, 2024",
     readTime: "2 min read",
     slug: "thai-noodle-guide",
@@ -61,7 +54,7 @@ const blogPosts = [
     title: "Why Thai Food Is Secretly Healthy",
     excerpt:
       "Herbs, spices, balance, freshness — Thai food does a LOT more for the body than people realise.",
-    image: healthyDish,
+    image: "/blog/healthythaidish.png",
     date: "March 10, 2024",
     readTime: "3 min read",
     slug: "why-thai-food-is-healthy",
