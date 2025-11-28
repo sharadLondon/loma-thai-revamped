@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import herbsImg from "../../assets/blog/growherbs.png";
 
 export default function ThaiHerbsUK() {
   return (

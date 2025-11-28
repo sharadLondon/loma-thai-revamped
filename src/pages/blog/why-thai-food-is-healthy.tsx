@@ -1,6 +1,4 @@
 import BlogLayout from "../../components/BlogLayout";
-import Image from "next/image";
-import healthyImg from "../../assets/blog/healthythaidish.png";
 
 export default function WhyThaiFoodIsHealthy() {
   return (
